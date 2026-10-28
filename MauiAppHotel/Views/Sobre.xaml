@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre">
+
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+
+        <Label Text="App Hotel - Etec"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="DarkRed" />
+
+        <Label Text="Desenvolvido por: Antonio Vieira dos Santos"
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="Ano de Desenvolvimento: 2026"
+               FontSize="16"
+               HorizontalOptions="Center" />
+
+        <BoxView HeightRequest="3" BackgroundColor="Red" Margin="0,15,0,15" />
+
+        <Label Text="Projeto dedicado à classe trabalhadora, à justiça social e ao progresso com inclusão. Com a força do povo, a esperança venceu e seguimos construindo um país para todos!"
+               FontSize="14"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="DimGray" />
+
+    </VerticalStackLayout>
+</ContentPage>

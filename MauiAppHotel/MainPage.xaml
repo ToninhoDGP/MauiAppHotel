@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.MainPage"
+             Title="App Hotel">
+
+    <VerticalStackLayout Spacing="15" Padding="20">
+
+        <Label Text="Calculadora de Estadia"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="Escolha o seu quarto:" />
+        <Picker x:Name="pck_quarto"
+                Title="Selecione o quarto"
+                ItemDisplayBinding="{Binding Descricao}" />
+
+        <Label Text="Data de Check-In:" />
+        <DatePicker x:Name="dtpck_checkin"
+                    Format="dd/MM/yyyy" />
+
+        <Label Text="Data de Check-Out:" />
+        <DatePicker x:Name="dtpck_checkout"
+                    Format="dd/MM/yyyy" />
+
+        <Label Text="Quantidade de Adultos:" />
+        <Stepper x:Name="stp_adultos"
+                 Minimum="1" Maximum="10" Increment="1" />
+        <Label Text="{Binding Source={x:Reference stp_adultos}, Path=Value}" />
+
+        <Label Text="Quantidade de Crianças:" />
+        <Stepper x:Name="stp_criancas"
+                 Minimum="0" Maximum="10" Increment="1" />
+        <Label Text="{Binding Source={x:Reference stp_criancas}, Path=Value}" />
+
+        <Button Text="Avançar"
+                Clicked="Button_Clicked"
+                BackgroundColor="Purple"
+                TextColor="White" />
+
+    </VerticalStackLayout>
+</ContentPage>
